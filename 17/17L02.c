@@ -68,7 +68,7 @@ void TablePrint (int max, int *ptr)
     printf("....");
 
   for (i = 0; i < max; i++) {
-    printf("\n%d,", i + 1);
+    printf("\n%d|", i + 1);
     for (j = 0; j < max; j++)
       printf("%3d", *(ptr + i * max + j));
   }
