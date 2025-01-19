@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/rohanparkes/dev/c/24hrs/8/Q_01'
+relocations:     []
+...
