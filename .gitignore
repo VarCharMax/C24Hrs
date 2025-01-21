@@ -25,4 +25,6 @@
 # Ignore IDEs
 .vscode
 
+# C code temp files
 tempCodeRunnerFile
+.dSYM
