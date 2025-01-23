@@ -27,10 +27,10 @@ int main (void)
       #if TEST_3 == 3
         StrPrint(str, MAX_NUM);
       #else
-        StrPrint (str, MAX_NUM - ONE) ;
+        StrPrint(str, MAX_NUM - ONE);
       #endif
     #else
-      StrPrint(str, MAX_NUM - TWO) ;
+      StrPrint(str, MAX_NUM - TWO);
     #endif
   #else
     printf("No TEST macro has been set.\n");
