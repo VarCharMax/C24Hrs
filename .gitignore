@@ -27,4 +27,7 @@
 
 # C code temp files
 tempCodeRunnerFile
-.dSYM
+*.dSYM
+*.yml
+Info.plist
+
