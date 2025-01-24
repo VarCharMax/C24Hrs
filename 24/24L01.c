@@ -32,7 +32,9 @@ NODE *list_node_create(void)
   NODE *ptr;
 
   if ((ptr=(NODE *)malloc(sizeof(NODE))) == NULL)
+  {
     ErrorExit("malloc() failed.\n");
+  }
 
   ptr->next_ptr = NULL; /* set the next pointer to NULL */
   ptr->id = 0; /* initialization */
@@ -126,9 +128,9 @@ void list_node_print(void)
       for (ptr = head_ptr;
           ptr->next_ptr != NULL;
           ptr = ptr->next_ptr) {
-          printf("%s:%d -> ", ptr->name, ptr->id);
+          printf("%s:%lu -> ", ptr->name, ptr->id);
       }
-      printf("%s:%d ->|", ptr->name, ptr->id);
+      printf("%s:%lu ->|", ptr->name, ptr->id);
       printf("\n" );
   }
 }
